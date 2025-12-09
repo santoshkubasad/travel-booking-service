@@ -8,7 +8,7 @@
 - Receives payment confirmations via webhook 
 - Updates booking payment status 
 - Exposes authenticated REST APIs 
-- Swagger UI: http://localhost:8080/swagger-ui.html 
+- Swagger UI: http://localhost:8080/swagger-ui/index.html
   
 ## Prerequisites 
  
