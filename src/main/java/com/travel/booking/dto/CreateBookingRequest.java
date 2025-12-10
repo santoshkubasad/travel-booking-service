@@ -6,17 +6,17 @@ import jakarta.validation.constraints.Positive;
 import java.math.BigDecimal; 
  
 public class CreateBookingRequest { 
-    @NotBlank 
+    @NotBlank(message = "Booking ID cannot be null or empty") 
     private String bookingId; 
  
-    @NotBlank 
+    @NotBlank(message = "Customer name cannot be null or empty") 
     private String customerName; 
  
-    @NotBlank 
+    @NotBlank(message = "Destination cannot be null or empty") 
     private String destination; 
  
-    @NotNull 
-    @Positive 
+    @NotNull(message = "Amount due cannot be null") 
+    @Positive(message = "Amount due must be greater than zero") 
     private BigDecimal amountDue; 
  
     // Getters and setters 
